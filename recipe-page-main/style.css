@@ -1,0 +1,161 @@
+:root {
+    --clr-nutmeg: hsl(14, 45%, 36%);
+    --clr-rasberry-dark: hsl(332, 51%, 32%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-rose-white: hsl(330, 100%, 98%);
+    --clr-eggshell:  hsl(30, 54%, 90%);
+    --clr-gray-light: hsl(30, 18%, 87%);
+    --clr-wenge-brown: hsl(30, 10%, 34%);
+    --clr-dark-charcoal: hsl(24, 5%, 18%);
+
+    --fw-regular: 400;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+
+    --ff-serif: 'Young Serif';
+    --ff-sans-serif: Outfit;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--clr-eggshell);
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    font-family: var(--ff-sans-serif);
+    color: var(--clr-wenge-brown);
+}
+
+hr {
+    margin-top: 1.5rem;
+    background-color: var(--clr-gray-light); 
+    height: 1px; 
+    border: 0;
+}
+
+h1,h2 {
+    font-family: var(--ff-serif);
+    font-weight: var(--fw-regular);
+}
+
+h1 {
+    color: var(--clr-dark-charcoal);
+}
+
+h2 {
+    color: var(--clr-nutmeg);
+}
+
+.card {
+    background: var(--clr-white);
+    width: 45rem;
+    margin-top: 5vh;
+    border-radius: 1rem;
+    margin-bottom: 5vh;
+}
+
+img {
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 0;
+    border-radius: 0.8rem;
+}
+
+.preparation {
+    background-color: var(--clr-rose-white);
+    border-radius: 0.6rem;
+    color: var(--clr-wenge-brown);
+    line-height: 2rem;
+}
+
+.preparation b {
+    font-weight: var(--fw-bolder);
+}
+
+.preparation h2 {
+    font-family: var(--ff-sans-serif);
+    font-weight: var(--fw-bold);
+    color: var(--clr-rasberry-dark);
+    padding: 1rem 0 0 1.5rem;
+}
+
+.preparation ul {
+    padding-bottom: 1.5rem;
+    
+}
+
+.preparation li {
+    padding-left: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+.ingredients li {
+    padding-left: 1.1rem;
+    margin-left: -1.1rem;
+    line-height: 1.8rem;
+    
+}
+
+.instructions li {
+    padding-left: 1rem;
+    margin-left: -1rem;
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+}
+
+ul li,
+ol li {
+    color: var(--clr-rasberry-dark);
+}
+
+ul li span,
+ol li span {
+    color: var(--clr-dark-charcoal)
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+td {
+    border-bottom: 1px solid var(--clr-gray-light);
+    border-collapse: collapse;
+    padding: 0.5rem 2rem 0.8rem 2rem;
+}
+
+tr td:last-child {
+    color: var(--clr-nutmeg);
+    font-weight: var(--fw-bold);
+}
+
+table tr:last-child td {
+    border-width: 0;
+}
+
+.content {
+    margin: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+
+    html {
+        font-size: 18px;
+    }
+    
+    .card {
+        width: 100vw;
+        margin: 0;
+        border-radius: 00;
+    }
+
+    img {
+        width: 100%;
+        margin: 0;
+        border-radius: 0rem;
+    }
+}
