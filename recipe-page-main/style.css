@@ -138,7 +138,7 @@ table tr:last-child td {
 }
 
 .content {
-    margin: 1.5rem;
+    margin: 2.5rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -157,5 +157,9 @@ table tr:last-child td {
         width: 100%;
         margin: 0;
         border-radius: 0rem;
+    }
+
+    .content {
+        margin: 1.5rem;
     }
 }
